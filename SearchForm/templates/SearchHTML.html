@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search Example</title>
+</head>
+<body>
+    <h1>Search Example</h1>
+    <input type="text" id="searchInput" placeholder="Enter your search term: ">
+    <button onclick="showSearchText()">Search</button>
+    <p id="searchResult"></p>
+
+    <!-- if not use flask we must do this to display content -->
+    <!-- so we can use Flask like example in Search.html -->
+    <script>
+        function showSearchText() {
+            let inputElement = document.getElementById("searchInput");
+            let searchText = inputElement.value;
+            let resultElement = document.getElementById("searchResult");
+            resultElement.innerHTML = "You searched for: " + searchText;
+        }
+    </script>
+</body>
+</html>
