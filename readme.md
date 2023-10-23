@@ -1,4 +1,4 @@
-## Làm việc với Input, Request, Search, Data v2
+## Làm việc với Input, Request, Search, Data
 
 ***1. Working with Input Form***
 
@@ -18,4 +18,4 @@
 ## Làm việc với cơ sở dữ liệu - Search Form
 ## Làm việc với cơ sở dữ liệu - Login Form Session 
 ## Làm việc với cơ sở dữ liệu - New Registration Form
-## Làm việc với Shopping Cart V11 
+## Làm việc với Shopping Cart
