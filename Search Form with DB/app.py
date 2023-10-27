@@ -20,7 +20,7 @@ def search():
 
 # find search_text in csv and display to html
 def load_data_from_db(search_text):
-    sqldbname = 'db/website.db'
+    sqldbname = 'db\website.db'
     if search_text != "":
         conn = sqlite3.connect(sqldbname)
         cursor = conn.cursor()

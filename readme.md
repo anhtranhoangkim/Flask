@@ -14,12 +14,29 @@
 ***5. Registration Form***
 > [RegistrationForm/app.py](Registration Form/app.py)
 
-## Làm việc với SQLite 
+## Làm việc với cơ sở dữ liệu SQLite 
+***1. Working with SQLite database***
 > [SQLite/app.py](SQLite/app.py)
+
+***2. Flask-SQLAlchemy***
+> [SQLite\main_2_SQLAlchemy.py](SQLite\main_2_SQLAlchemy.py)
+
 ## Làm việc với cơ sở dữ liệu - Search Form
-## Làm việc với cơ sở dữ liệu - Login Form Session 
+***3. Search Form***
+> [Search Form with DB\app.py](Search Form with DB\app.py)
+
+## Làm việc với cơ sở dữ liệu - Login Form Session
+***5. Working with Session - Check User  
+> [Login Form with DB/app_login_db.py](Login Form with DB/app_login_db.py)
+
 ## Làm việc với cơ sở dữ liệu - New Registration Form
-## Làm việc với Shopping Cart
+***2.2. New Registration Form***
+>[Registration Form with DB\app_registration.py](Registration Form with DB\app_registration.py)
+
+## Làm việc với cơ sở dữ liệu - Shopping Cart
+[Shopping Cart/app.py](Shopping Cart/app.py)
+
+
 
 # Một số lỗi thường gặp
 1. Port conflict
@@ -27,4 +44,11 @@
 > taskkill /PID <PID> /F
 2. Run ra template cũ chứ không ra cái đang làm
 > restart 
-3. 
+3. OperationalError (sqlite3.OperationalError: unable to open database file)
+> check database's path 
+4. Bad Request
+> check value in request.form[]
+5. Method Not Allowed
+> add 'GET' or 'POST' (or both) to @app.route
+6. Internal Server Error 
+> just pray for yourself
