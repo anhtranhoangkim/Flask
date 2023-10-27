@@ -3,38 +3,38 @@
 ***1. Working with Input Form***
 
 ***2. Working with Input Form and Request***
-> [SearchForm/Search.py](Search Form/Search.py)
+>[Search Form/Search.py](Search Form/Search.py)
 
 ***3. Search Form***
-> [SearchForm/SearchWithData.py](Search Form/SearchWithData.py)
+>[Search Form/SearchWithData.py](Search Form/SearchWithData.py)
 
 ***4. Working with Session***
-> [SessionLogin/app.py](Session Login/app.py)
+>[Session Login/app.py](Session Login/app.py)
 
 ***5. Registration Form***
-> [RegistrationForm/app.py](Registration Form/app.py)
+>[Registration Form/app.py](Registration Form/app.py)
 
 ## Làm việc với cơ sở dữ liệu SQLite 
 ***1. Working with SQLite database***
 > [SQLite/app.py](SQLite/app.py)
 
 ***2. Flask-SQLAlchemy***
-> [SQLite\main_2_SQLAlchemy.py](SQLite\main_2_SQLAlchemy.py)
+> [SQLite/main_2_SQLAlchemy.py](SQLite/main_2_SQLAlchemy.py)
 
 ## Làm việc với cơ sở dữ liệu - Search Form
 ***3. Search Form***
-> [Search Form with DB\app.py](Search Form with DB\app.py)
+>[Search Form with DB/app.py](Search Form with DB/app.py)
 
 ## Làm việc với cơ sở dữ liệu - Login Form Session
-***5. Working with Session - Check User  
-> [Login Form with DB/app_login_db.py](Login Form with DB/app_login_db.py)
+***5. Working with Session - Check User***
+>[Login Form with DB/app_login_db.py](Login Form with DB/app_login_db.py)
 
 ## Làm việc với cơ sở dữ liệu - New Registration Form
 ***2.2. New Registration Form***
->[Registration Form with DB\app_registration.py](Registration Form with DB\app_registration.py)
+>[Registration Form with DB/app_registration.py](Registration Form with DB/app_registration.py)
 
 ## Làm việc với cơ sở dữ liệu - Shopping Cart
-[Shopping Cart/app.py](Shopping Cart/app.py)
+>[Shopping Cart/app.py](Shopping Cart/app.py)
 
 
 
