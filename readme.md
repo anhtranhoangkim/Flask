@@ -51,4 +51,4 @@
 5. Method Not Allowed
 > add 'GET' or 'POST' (or both) to @app.route
 6. Internal Server Error 
-> just pray for yourself
+> just pray for yourself ;<
