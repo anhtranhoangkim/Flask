@@ -3,16 +3,16 @@
 ***1. Working with Input Form***
 
 ***2. Working with Input Form and Request***
->[Search Form/Search.py](Search Form/Search.py)
+>[Search Form/Search.py](Search%20Form/Search.py)
 
 ***3. Search Form***
->[Search Form/SearchWithData.py](Search Form/SearchWithData.py)
+>[Search Form/SearchWithData.py](Search%20Form/SearchWithData.py)
 
 ***4. Working with Session***
->[Session Login/app.py](Session Login/app.py)
+>[Session Login/app.py](Session%20Login/app.py)
 
 ***5. Registration Form***
->[Registration Form/app.py](Registration Form/app.py)
+>[Registration Form/app.py](Registration%20Form/app.py)
 
 ## Làm việc với cơ sở dữ liệu SQLite 
 ***1. Working with SQLite database***
@@ -23,18 +23,18 @@
 
 ## Làm việc với cơ sở dữ liệu - Search Form
 ***3. Search Form***
->[Search Form with DB/app.py](Search Form with DB/app.py)
+>[Search Form with DB/app.py](Search%20Form%20with%20DB/app.py)
 
 ## Làm việc với cơ sở dữ liệu - Login Form Session
 ***5. Working with Session - Check User***
->[Login Form with DB/app_login_db.py](Login Form with DB/app_login_db.py)
+>[Login Form with DB/app_login_db.py](Login%20Form%20with%20DB/app_login_db.py)
 
 ## Làm việc với cơ sở dữ liệu - New Registration Form
 ***2.2. New Registration Form***
->[Registration Form with DB/app_registration.py](Registration Form with DB/app_registration.py)
+>[Registration Form with DB/app_registration.py](Registration%20Form%20with%20DB/app_registration.py)
 
 ## Làm việc với cơ sở dữ liệu - Shopping Cart
->[Shopping Cart/app.py](Shopping Cart/app.py)
+>[Shopping Cart/app.py](Shopping%20Cart/app.py)
 
 
 
