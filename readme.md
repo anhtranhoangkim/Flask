@@ -42,7 +42,7 @@
 1. Port conflict
 > netstat -ano | findstr :5000
 > taskkill /PID <PID> /F
-2. Run ra template cũ chứ không ra cái đang làm
+2. Run ra template cũ chứ không ra cái đang làm, không render được template 
 > restart 
 3. OperationalError (sqlite3.OperationalError: unable to open database file)
 > check database's path 
