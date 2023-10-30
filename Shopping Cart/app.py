@@ -66,7 +66,9 @@ def add_to_cart():
         "id": product_id,
         "name": product[0],
         "price": product[1],
-        "quantity": quantity
+        "quantity": quantity,
+        # "picture": product[5],
+        # "details": product[8]
     }
 
     # get the cart from the session or create an empty list

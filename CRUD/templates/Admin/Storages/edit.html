@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Edit Storages</title>
+</head>
+<body>
+    <h1>Edit Storages</h1>
+    <form action="/edit/{{ storage['id'] }}" method="post">
+        <label for="product">Product:</label>
+        <input type="text" name="product" id="product" required>
+        <br><br>
+
+        <label for="brand">Product:</label>
+        <input type="text" name="brand" id="brand" required>
+        <br><br>
+
+        <label for="rating">Rating:</label>
+        <input type="text" name="rating" id="rating" required>
+        <br><br>
+
+        <label for="model">Model:</label>
+        <input type="text" name="model" id="model" required>
+        <br><br>
+
+        <label for="picture">Picture URL:</label>
+        <input type="text" name="picture" id="picture" required>
+        <br><br>
+
+        <label for="price">Price:</label>
+        <input type="text" name="price" id="price" required>
+        <br><br>
+
+        <label for="ram">RAM:</label>
+        <input type="text" name="ram" id="ram" required>
+        <br><br>
+
+        <label for="details">Details:</label>
+        <textarea name="details" id="details" required></textarea>
+        <br><br>
+
+        <button type="submit">Save</button>
+        <a href="/">Cancel</a>
+    </form>
+</body>
+</html>
