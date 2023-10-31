@@ -1,6 +1,6 @@
 import sqlite3
 
-from flask import (Flask, render_template, request, redirect, session, url_for)
+from flask import (Flask, render_template, request, redirect, session, url_for, flash)
 
 app = Flask(__name__, static_url_path='/static')
 app.secret_key = 'your_secret_key'
@@ -263,6 +263,92 @@ def orders(order_id):
             conn.close()
             return render_template('orders.html', orders=user_orders)
     return redirect(url_for('login'))
+
+
+db_file = 'db/website.db'
+
+
+def get_db_connection():
+    connection = sqlite3.connect(db_file)
+    connection.row_factory = sqlite3.Row
+    return connection
+
+
+@app.route('/editStorages')
+def editStorages():
+    connection = get_db_connection()
+    cursor = connection.cursor()
+    cursor.execute('SELECT * FROM storages')
+    storages = cursor.fetchall()
+    connection.close()
+    return render_template('Admin/Storages/index.html', storages=storages)
+
+
+@app.route('/add', methods=['GET', 'POST'])
+def add():
+    if request.method == 'POST':
+        product = request.form['product']
+        brand = request.form['brand']
+        rating = request.form['rating']
+        model = request.form['model']
+        picture = request.form['picture']
+        price = request.form['price']
+        RAM = request.form['RAM']
+        details = request.form['details']
+
+        connection = get_db_connection()
+        cursor = connection.cursor()
+        cursor.execute('INSERT INTO storages (product, brand, rating, model, picture, price, RAM, details) '
+                       'VALUES (?, ?, ?, ?, ?, ?, ?, ?)', (product, brand, rating, model, picture, price, RAM, details))
+        connection.commit()
+        connection.close()
+
+        flash('Storages added successfully', 'success')
+        return redirect(url_for('editStorages'))
+    return render_template('Admin/Storages/add.html')
+
+
+@app.route('/edit/<int:storage_id>', methods=['GET', 'POST'])
+def edit(storage_id):
+    connection = get_db_connection()
+    cursor = connection.cursor()
+    cursor.execute('SELECT * FROM storages WHERE id = ?', (storage_id,))
+    storage = cursor.fetchone()
+    connection.close()
+
+    if request.method == 'POST':
+        product = request.form['product']
+        brand = request.form['brand']
+        rating = request.form['rating']
+        model = request.form['model']
+        picture = request.form['picture']
+        price = request.form['price']
+        RAM = request.form['RAM']
+        details = request.form['details']
+
+        connection = get_db_connection()
+        cursor = connection.cursor()
+        cursor.execute('UPDATE storages SET product=?, brand=?, rating=?, model=?, '
+                       'picture=?, price=?, RAM=?, details=? WHERE storage_id=?',
+                       (product, brand, rating, model, picture, price, RAM, details))
+        connection.commit()
+        connection.close()
+
+        flash('Storages updated successfully!', 'success')
+        return redirect(url_for('editStorages'))
+    return render_template('Admin/Storages/edit.html', storage=storage)
+
+
+@app.route('/delete/<int:storage_id>', methods=['POST'])
+def delete(storage_id):
+    connection = get_db_connection()
+    cursor = connection.cursor()
+    cursor.execute('DELETE FROM storages WHERE id = ?', (storage_id,))
+    connection.commit()
+    connection.close()
+
+    flash('Storages deleted successfully!', 'success')
+    return redirect(url_for('editStorages'))
 
 
 if __name__ == '__main__':
