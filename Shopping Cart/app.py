@@ -14,7 +14,8 @@ def index():
         current_username = session['current_user']['name']
     else:
         current_username = ""
-    return render_template('SearchWithCSSDataDBAddToCartTable.html', search_text="", username=current_username)
+    return render_template('SearchWithCSSDataDBAddToCartTable.html',
+                           search_text="", username=current_username)
 
 
 @app.route('/searchData', methods=['POST'])
